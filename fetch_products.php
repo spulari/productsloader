@@ -12,7 +12,7 @@ $products = [];
 $hasMore = false;
 
 if (in_array($category, ['new', 'old'])) {
-    $count_sql = "SELECT COUNT(*) FROM product_data WHERE category = ?";
+    $count_sql = "SELECT COUNT(*) FROM product_data WHERE available = true and category = ? ";
     if ($stmt_count = $mysqli->prepare($count_sql)) {
         $stmt_count->bind_param("s", $category);
         $stmt_count->execute();
@@ -29,7 +29,7 @@ if (in_array($category, ['new', 'old'])) {
     // Removed 'image_url' from SELECT statement
     $sql = "SELECT id, name, small_description, description, type, size, color, available
             FROM product_data
-            WHERE category = ?
+            WHERE available = true and category = ?
             LIMIT ? OFFSET ?";
 
     if ($stmt = $mysqli->prepare($sql)) {
