@@ -70,8 +70,8 @@
 <script>
     $(document).ready(function() {
         // --- Configuration ---
-        const PRODUCTS_PER_LOAD = 10;
-        const SCROLL_THRESHOLD = 200; // Pixels from bottom of page to trigger load
+        const PRODUCTS_PER_LOAD = 7;
+        const SCROLL_THRESHOLD = 80; // Pixels from bottom of page to trigger load
 
         // --- State Variables ---
         let currentCategory = 'new';

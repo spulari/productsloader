@@ -3,8 +3,16 @@
 include 'header.php'; // Include the header template
 ?>
 
-    <div class="container mt-5">
-        <h1 class="text-center mb-4 text-primary">Pulari's Products</h1>
+    <div class="container productcardlist mt-5">
+        <h1 class="mb-3 text-primary text-start">My Prescriptions</h1>
+        <p class="text-muted text-start">
+            Browse and manage your prescription products below.
+            Select a product to view more details or add it to your cart.
+            Easily keep track of your current and previous prescriptions in one place.
+             Browse and manage your prescription products below.
+            Select a product to view more details or add it to your cart.
+            Easily keep track of your current and previous prescriptions in one place.
+        </p>
 
         <div id="new-products-section" class="category-section">
             <h2 class="mb-4 text-secondary">New Products</h2>
