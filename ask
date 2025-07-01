@@ -1,0 +1,64 @@
+New Project
+Technolagy - PHP, MYSQL, Jquery, HTML, CSS, Bootstrap
+
+Use the same product and product images table.
+
+Backend fetch all the product where the active = true and get the data 
+in category wise. 
+
+Pass the categorized data into html and render the view.
+
+view
+Main Page Title and description
+
+Category Title - New Prescriptions
+Render all the product cards where the category = new
+
+Category Title - Old Prescriptions
+Render all the product cards where the category = old
+
+
+Product Card - Full Row
+Product Image - skeleton screen only for the images
+Title and Description
+Add to Cart (eligilble = true ) and Auto Refill button (autorefilleligible = true )
+
+
+Fetching Images should be a separate ajax call for each product card from the fronend after rendering all the product Cards. Render the product images based on the lazy loading while scrolling.
+The skelton screen keep it as it is for the product cards which are not loaded yet
+
+
+Header
+Top Header
+
+Left - Logo
+Right - Search, My Account, Logout
+Sub Header - Navigation menus
+Home
+Pulari
+My Rx
+My Orders
+My Account
+Contact
+
+
+Footer-  3 Columns
+Contact
+123 Product Lane, Suite 100, City, State 12345
+info@pulari.com
++01 234 567 88
++01 234 567 89
+
+Legal
+Privacy Policy
+Terms of Service
+Rules and Regulations
+Disclaimer
+
+My Account
+My Orders
+My Profile
+Wishlist
+Returns & Refunds
+
+Please create header and footer common
