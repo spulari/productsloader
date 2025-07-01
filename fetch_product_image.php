@@ -25,12 +25,8 @@ if ($product_id !== null && is_numeric($product_id)) {
     }
 }
 
-if ($image_url == "https://example.com/images/boxerbriefs_mens.jpg" or $image_url == "https://example.com/images/travelguide_europe.jpg") {
-    // If the image URL is the default placeholder, set it to 'noimage.jpg'
-    $image_url = '';
-}
-
 $mysqli->close();
 
 // Return the image URL. If not found, it will be null.
 echo json_encode(['product_id' => (int)$product_id, 'image_url' => $image_url]);
+?>
